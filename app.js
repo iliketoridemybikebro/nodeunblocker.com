@@ -17,11 +17,11 @@ var Transform = require('stream').Transform;
 var youtube = require('unblocker/examples/youtube/youtube.js')
 const cors = require('cors')
 
+var app = express();
+
 app.use(cors({
     origin: '*'
 }));
-
-var app = express();
 
 var google_analytics_id = process.env.GA_ID || null;
 
