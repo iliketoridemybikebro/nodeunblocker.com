@@ -15,6 +15,11 @@ var express = require('express');
 var Unblocker = require('unblocker');
 var Transform = require('stream').Transform;
 var youtube = require('unblocker/examples/youtube/youtube.js')
+const cors = require('cors')
+
+app.use(cors({
+    origin: '*'
+}));
 
 var app = express();
 
